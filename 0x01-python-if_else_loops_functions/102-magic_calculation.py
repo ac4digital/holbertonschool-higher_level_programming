@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-
 def margic_calculation(a, b, c):
-
     if a < b:
         return(c)
     elif c > b:
