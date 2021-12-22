@@ -5,6 +5,6 @@ def uppercase(str):
 
         if letter > 96 and letter < 123:
             letter = letter - 32
-        print("{:c}".format(i), end="")
+        print("{:c}".format(letter), end="")
 
     print()
