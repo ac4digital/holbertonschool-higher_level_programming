@@ -5,7 +5,7 @@ if __name__ == "__main__":
     length = len(argv)
     if length != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        quit(1)
+        exit(1)
     functions = [add, sub, mul, div]
     operators = ["+", "-", "*", "/"]
     a = int(argv[1])
@@ -16,4 +16,4 @@ if __name__ == "__main__":
             break
         else:
             print("Unknown operator. Available operators: +, -, * and /")
-            quit(1)
+            exit(1)
