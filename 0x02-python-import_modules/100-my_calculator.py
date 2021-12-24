@@ -14,6 +14,6 @@ if __name__ == "__main__":
         if argv[2] == s:
             print("{} {} {} = {}".format(a, s, b, functions[i](a, b)))
             exit(0)
-        else:
-            print("Unknown operator. Available operators: +, -, * and /")
-            exit(1)
+    else:
+        print("Unknown operator. Available operators: +, -, * and /")
+        exit(1)
