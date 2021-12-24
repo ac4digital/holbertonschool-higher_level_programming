@@ -13,7 +13,7 @@ if __name__ == "__main__":
     for i, s in enumerate(operators):
         if argv[2] == s:
             print("{} {} {} = {}".format(a, s, b, functions[i](a, b)))
-            break
+            exit(0)
         else:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
