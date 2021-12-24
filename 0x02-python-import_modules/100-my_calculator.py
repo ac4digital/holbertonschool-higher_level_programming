@@ -12,7 +12,7 @@ if __name__ == "__main__":
     b = int(argv[3])
     for i, s in enumerate(operators):
         if argv[2] == s:
-            print("{:d} {:s} {:d} = {:d}".format(a, s, b, functions[i](a, b)))
+            print("{} {} {} = {}".format(a, s, b, functions[i](a, b)))
             break
         else:
             print("Unknown operator. Available operators: +, -, * and /")
