@@ -1,2 +1,2 @@
 #!/usr/bin/python
-import easyprint
+__import__("#pythoniscool") 
