@@ -40,5 +40,6 @@ int is_palindrome(listint_t **head)
             return (0);
     current = current->next;
     }
+    free(copy_list);
     return (1);
 }
