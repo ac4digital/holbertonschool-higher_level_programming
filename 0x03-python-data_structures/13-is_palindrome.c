@@ -24,6 +24,8 @@ int is_palindrome(listint_t **head)
         length++;
     }
     copy_list = malloc(sizeof(int) * length);
+    if (copy_list == NULL)
+        exit(98);
     current = *head;
 
     for (i = (length - 1); i >= 0; i--)
