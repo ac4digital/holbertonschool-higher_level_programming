@@ -46,7 +46,6 @@ Checking one arg:
     >>> add_integer(1)
     99
 
-
 Checking more than 2 args:
     >>> add_integer(1, 2, 3)
     Traceback (most recent call last):
