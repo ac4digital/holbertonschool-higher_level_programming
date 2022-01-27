@@ -14,6 +14,12 @@ Checking no args:
         ...
     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
+Checking None arg:
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
 Checking one arg:
     >>> say_my_name("Andres")
     My name is Andres
