@@ -26,17 +26,21 @@ Checking float with integer addition:
 
 Checking strings in two args:
 	>>> add_integer("Andres", "Catano")
-	a must be an integer
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
 
 Checking string in second arg:
 	>>> add_integer(1, "Catano")
-	b must be an integer
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
 
 Checking string in first arg:
 	>>> add_integer("Andres", 2)
 	Traceback (most recent call last):
 	...
-	TypeError: add_integer() a must be an integer
+	TypeError: a must be an integer
 
 Checking no args:
     >>> add_integer()
