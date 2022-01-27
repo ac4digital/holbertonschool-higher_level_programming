@@ -34,7 +34,9 @@ Checking string in second arg:
 
 Checking string in first arg:
 	>>> add_integer("Andres", 2)
-	a must be an integer
+	Traceback (most recent call last):
+	...
+	TypeError: add_integer() a must be an integer
 
 Checking no args:
     >>> add_integer()
@@ -45,6 +47,12 @@ Checking no args:
 Checking one arg:
     >>> add_integer(1)
     99
+
+Checking None arg:
+    >>> add_integer(None)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
 
 Checking more than 2 args:
     >>> add_integer(1, 2, 3)
