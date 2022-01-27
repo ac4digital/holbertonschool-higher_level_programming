@@ -1,0 +1,34 @@
+The ``5-text_identation`` module
+============================
+
+Using ``text_indentation``
+---------------------
+
+This is an test text file in reStructuredText format. First import ``text_indentation`` from the ``5-text_indentation`` module:
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Checking no args:
+    >>> text_indentation()
+    Traceback (most recent call last):
+        ...
+    TypeError: text_indentation() missing 1 required positional argument: 'size'
+
+Checking normal function:
+    >>> text_indentation(0)
+
+Checking normal function:
+    >>> text_indentation(1)
+    #
+
+Checking normal function:
+    >>> text_indentation(2)
+    ##
+    ##
+    
+Checking more than 1 args:
+    >>> text_indentation(1, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: text_indentation() takes 1 positional argument but 2 were given
+    

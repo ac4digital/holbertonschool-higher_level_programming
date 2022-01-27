@@ -1,0 +1,51 @@
+The ``3-say_my_name`` module
+============================
+
+Using ``say_my_name``
+---------------------
+
+This is an test text file in reStructuredText format. First import ``say_my_name`` from the ``3-say_my_name`` module:
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Checking no args:
+    >>> say_my_name()
+    Traceback (most recent call last):
+        ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+Checking one arg:
+    >>> say_my_name("Andres")
+    My name is Andres
+    
+Checking two arg no string:
+    >>> say_my_name("a", "b")
+    My name is a b
+
+Checking two arg no string:
+    >>> say_my_name(, "b")
+    Traceback (most recent call last):
+        ...
+    SyntaxError: invalid syntax
+
+Checking two args:
+    >>> say_my_name("Andres", "Catano")
+    My name is Andres Catano
+
+Checking more than 2 args:
+    >>> say_my_name("Andres", "Catano", "Betancourt")
+    Traceback (most recent call last):
+        ...
+    TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
+Checking one number and one string args:
+    >>> say_my_name(10, "Andres")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
+Checking one string and one number args:
+    >>> say_my_name("Andres", 10)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
