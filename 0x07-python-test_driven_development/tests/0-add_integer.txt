@@ -32,6 +32,10 @@ Checking Float with Float addition:
 	>>> add_integer(1.5, 2.5)
 	3
 
+Checking addition over multiple values:
+	 >>> [add_integer(i, i ** 2) for i in range(6)]
+	 [0, 2, 6, 12, 20, 30]
+
 Checking strings in two args:
 	>>> add_integer("Andres", "Catano")
 	Traceback (most recent call last):
