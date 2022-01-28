@@ -54,12 +54,6 @@ Checking string in first arg:
 	...
 	TypeError: a must be an integer
 
-Checking no args:
-    >>> add_integer()
-    Traceback (most recent call last):
-    ...
-    TypeError: add_integer() missing 1 required positional argument: 'a'
-
 Checking one arg:
     >>> add_integer(1)
     99
