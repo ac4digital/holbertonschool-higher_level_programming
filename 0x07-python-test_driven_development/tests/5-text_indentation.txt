@@ -11,24 +11,23 @@ This is an test text file in reStructuredText format. First import ``text_indent
 Checking no args:
     >>> text_indentation()
     Traceback (most recent call last):
-        ...
-    TypeError: text_indentation() missing 1 required positional argument: 'size'
+    ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
 
-Checking normal function:
-    >>> text_indentation(0)
+Checking for too many args:
+	 >>> text_indentation("Hello", "Hi")
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: text_indentation() takes 1 positional argument but 2 were given
 
-Checking normal function:
-    >>> text_indentation(1)
-    #
+Checking for passing None:
+	 >>> text_indentation(None)
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: text must be a string
 
-Checking normal function:
-    >>> text_indentation(2)
-    ##
-    ##
-    
-Checking more than 1 args:
-    >>> text_indentation(1, 2)
-    Traceback (most recent call last):
-        ...
-    TypeError: text_indentation() takes 1 positional argument but 2 were given
-    
+Checking for passing non-string type:
+	 >>> text_indentation(1)
+         Traceback (most recent call last):
+         ...
+         TypeError: text must be a string
