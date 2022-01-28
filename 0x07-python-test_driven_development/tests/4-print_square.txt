@@ -25,10 +25,51 @@ Checking normal function:
     >>> print_square(2)
     ##
     ##
+
+Checking normal function:
+    >>> print_square(3)
+    ###
+    ###
+    ###
     
 Checking more than 1 args:
     >>> print_square(1, 2)
     Traceback (most recent call last):
         ...
     TypeError: print_square() takes 1 positional argument but 2 were given
+
+Checking None arg:
+    >>> print_square(None)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
     
+Checking Negative arg:
+    >>> print_square(-10)
+    Traceback (most recent call last):
+        ...
+    ValueError: size must be >= 0
+
+Checking Float arg:
+    >>> print_square(5.5)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+    
+Checking Array arg:
+    >>> print_square([1,2])
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+Checking Character arg:
+    >>> print_square('a')
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+Checking String arg:
+    >>> print_square('Andres')
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
