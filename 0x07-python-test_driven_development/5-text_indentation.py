@@ -9,10 +9,13 @@ def text_indentation(text):
     new_string = ""
     flags = 0
     for s in text:
-        new_string += s
-        if s in jumps:
-            new_string += "\n\n"
-            flags = 1
-        else:
+        if flags == 0:
+            new_string += s
+            if s in jumps:
+                new_string += "\n\n"
+                flags = 1
+            else:
+                flags = 0
+        elif flags == 1 and s == " ":
             flags = 0
     print(new_string, end="")
