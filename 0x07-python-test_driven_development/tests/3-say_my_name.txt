@@ -30,6 +30,10 @@ Checking two arg no string:
         ...
     SyntaxError: invalid syntax
 
+Checking one arg:
+    >>> say_my_name("Andres")
+    My name is Andres
+
 Checking two args:
     >>> say_my_name("Andres", "Catano")
     My name is Andres Catano
