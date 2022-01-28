@@ -20,10 +20,6 @@ Checking None arg:
         ...
     TypeError: first_name must be a string
 
-Checking one arg:
-    >>> say_my_name("Andres")
-    My name is Andres
-    
 Checking two arg no string:
     >>> say_my_name("a", "b")
     My name is a b
