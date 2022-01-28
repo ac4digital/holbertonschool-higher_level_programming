@@ -24,6 +24,8 @@ Checking float with integer addition:
 	>>> add_integer(1.5, 2)
 	3
 
+
+
 Checking strings in two args:
 	>>> add_integer("Andres", "Catano")
 	Traceback (most recent call last):
