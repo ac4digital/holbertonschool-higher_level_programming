@@ -4,7 +4,7 @@ const args = [];
 if (nextMax.length <= 3) {
   console.log(0);
 } else {
-  for(let i = 2; i < nextMax.length; i++) {
+  for (let i = 2; i < nextMax.length; i++) {
     args.push(parseInt(nextMax[i]));
     args.sort((a, b) => a - b);
   }
