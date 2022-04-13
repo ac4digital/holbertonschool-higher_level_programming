@@ -19,7 +19,7 @@ function getCharName (charUrl) {
 
 function doParse () {
   let movie = process.argv[2];
-  let url = 'https://swapi.co/api/films/' + movie;
+  let url = 'https://swapi-api.hbtn.io/api/films/' + movie;
 
   request(url, function (error, response, body) {
     if (error != null) {
