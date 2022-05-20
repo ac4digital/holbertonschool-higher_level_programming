@@ -7,7 +7,7 @@ if __name__ == '__main__':
     import requests
     from sys import argv
     tmp_file = requests.get('https://api.github.com/repos/{}/{}/commits'
-                     .format(argv[2], argv[1]))
+                            .format(argv[2], argv[1]))
     commits = tmp_file.json()
     for commit in commits[:10]:
         print(commit.get('sha'), end=': ')
